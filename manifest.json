@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Kimi Web 全宽开关 + 图片缩略图",
+  "version": "1.2",
+  "description": "全宽切换（菜单项）+ 消息气泡图片/视频附件显示缩略图",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://localhost/*",
+        "http://127.0.0.1/*",
+        "https://code-rc.kimi.com/*",
+        "https://code.kimi.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
